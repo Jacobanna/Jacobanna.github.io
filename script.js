@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'https://enigmatic-ravine-39358.herokuapp.com/v1/task';
+  var apiRoot = 'https://enigmatic-ravine-39358.herokuapp.com/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
