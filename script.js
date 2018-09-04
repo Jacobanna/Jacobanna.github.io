@@ -1,9 +1,5 @@
 $(document).ready(function() {
-<<<<<<< HEAD
   const apiRoot = 'https://enigmatic-ravine-39358.herokuapp.com/v1/';
-=======
-  const apiRoot = 'https://enigmatic-ravine-39358.herokuapp.com/v1/task/';
->>>>>>> a2bf77c0521adba38c172485d4e0a8c16455907a
   const trelloApiRoot = 'https://enigmatic-ravine-39358.herokuapp.com/v1/trello/';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
@@ -16,11 +12,7 @@ $(document).ready(function() {
   getAllTasks();
 
   function getAllAvailableBoards(callback, callbackArgs) {
-<<<<<<< HEAD
     var requestUrl = trelloApiRoot + 'boards';
-=======
-    var requestUrl = trelloApiRoot + 'getTrelloBoards';
->>>>>>> a2bf77c0521adba38c172485d4e0a8c16455907a
 
     $.ajax({
       url: requestUrl,
@@ -71,11 +63,7 @@ $(document).ready(function() {
   }
 
   function getAllTasks() {
-<<<<<<< HEAD
     const requestUrl = apiRoot + 'tasks';
-=======
-    const requestUrl = apiRoot + 'getTasks';
->>>>>>> a2bf77c0521adba38c172485d4e0a8c16455907a
 
     $.ajax({
       url: requestUrl,
@@ -178,11 +166,7 @@ $(document).ready(function() {
   }
 
   function handleCardCreationRequest(event) {
-<<<<<<< HEAD
     var requestUrl = trelloApiRoot + 'cards';
-=======
-    var requestUrl = trelloApiRoot + 'createTrelloCard';
->>>>>>> a2bf77c0521adba38c172485d4e0a8c16455907a
     var $relatedTaskRow = $(event.target).parents('[data-task-id]');
     var relatedTaskId = $relatedTaskRow.attr('data-task-id');
     var relatedTask = availableTasks[relatedTaskId];
